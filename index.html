@@ -19,7 +19,7 @@
             <nav class="dropdown">
                 <a href="#">Home</a>
                 <a href="#">Series</a>
-                <a href="#">Movies</a>
+                <a href="#movies">Movies</a>
                 <a href="#">Documentaries</a>
             </nav>
         </div>
@@ -27,13 +27,17 @@
     <main>
         <div class="main-movie">
             <div class="container">
-                <h3 class="title">Skate or Die</h3>
-                <p class="description">Jérôme and Benjamin are two young skateboarders whose carefree existence is turned upside down when they witness the murder of a drug dealer. Rumbled by the assassins they manage to escape. Taking refuge in a police station they then discover that the criminals are actually the crooked cops. </p>
+
+              
+                    <h3 class="title">Skate or Die</h3>
+                    <p class="description">Jérôme and Benjamin are two young skateboarders whose carefree existence is turned upside down when they witness the murder of a drug dealer. Rumbled by the assassins they manage to escape. Taking refuge in a police station they then discover that the criminals are actually the crooked cops. </p>
+                    
+               
 
                 <div class="btn-container">
-
-                    <button role="button" class="btn watch"><i class="fas fa-play"></i>Watch</button>
-                    <button role="button" class="btn info"><i class="fas fa-info-circle"></i>More Info</button>
+                    
+                    <button id= "btn" role="button" class="btn watch" onClick="window.open('https://www.youtube.com/watch?v=Oj1QD9m_7MQ')" ><i class="fas fa-play"></i>Watch</button>
+                    <button id= "btn" role="button" class="btn info" onClick="window.open('https://www.themoviedb.org/movie/13471-skate-or-die')"><i class="fas fa-info-circle"></i>More Info</button>
                     
                 </div>
 
@@ -42,7 +46,7 @@
 
         <div class="other-movies">
             <div class="carousel other-movies">
-                <h1>Other Movies</h1>
+                <h1 id="movies">Movies</h1>
 
                 <div class="owl-carousel owl-theme">
                     <div class="item"><img class="box-movie" src="img/first-descent.jpeg"alt=""> </div>
@@ -60,10 +64,6 @@
     
             </div>
     
-            <div class="carousel fave">
-                <h1>Favourites</h1>
-    
-            </div>
         </div>
     </main>
     <footer>

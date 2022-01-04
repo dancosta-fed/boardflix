@@ -120,6 +120,7 @@ header .container{
 
 .other-movies h1{
     font-size: 1.3em;
+    margin: 15px;
 }
 
 // === FOOTER === //
@@ -131,7 +132,7 @@ footer p{
     font-size: .7em;
     margin-left: 10px;
     position:absolute;
-    bottom:0;
+    //bottom:0;
     width:100%;
     height:25px;   /* Height of the footer */
     color: $font;
@@ -143,3 +144,21 @@ footer p{
     width: 100%;
     display: block;
 }
+
+// === MEDIA QUERY === //
+
+@media only screen and (min-width: 600px) {
+   header .container{
+       flex-direction: row;
+   }
+  }
+
+  @media only screen and (min-width: 900px) {
+ 
+    main .container{
+        width: 50%;
+    }
+
+   }
+
+   
